@@ -1,5 +1,5 @@
 
-Ref Url : https://java2blog.com/spring-boot-hibernate-example/
+
 
 Database : MySQL
 
@@ -33,7 +33,12 @@ application.properties
 	
 Url
 
-   http://localhost:8000/getAllCustomers
+	http://localhost:8080/books/getAllBooks
+  	http://localhost:8080/books/getBooksByID/982
+  	http://localhost:8080/books/deleteBooksByID/982
+  	
+  	
+  	
    
    
    
