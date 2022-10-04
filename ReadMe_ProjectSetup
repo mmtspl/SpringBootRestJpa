@@ -1,0 +1,39 @@
+
+Ref Url : https://java2blog.com/spring-boot-hibernate-example/
+
+Database : MySQL
+
+SQL Queries : 
+
+    create database CustomerData;
+	use CustomerData;
+	
+	Table will be created by hibernate properties by running the application.
+	
+	###CREATE TABLE CUSTOMER (id int(11) NOT NULL AUTO_INCREMENT,customerName varchar(255) DEFAULT NULL,email varchar(255) DEFAULT NULL,PRIMARY KEY (id));
+	desc customer;
+	desc employee;
+	select * from customer;
+	select * from employee;
+	insert into employee values (1000,"Mithun Majumdar", "150000");
+
+application.properties 
+	
+	make  spring.jpa.hibernate.ddl-auto=create    only for first time for creating User table in CustomerData
+	
+
+Start up the application :
+	1. Build and Run the application using Maven Build with   clean install spring-boot:run
+	
+	
+	
+application.properties 
+	
+	make  spring.jpa.hibernate.ddl-auto=none    and rerun the application after first time.
+	
+Url
+
+   http://localhost:8000/getAllCustomers
+   
+   
+   
