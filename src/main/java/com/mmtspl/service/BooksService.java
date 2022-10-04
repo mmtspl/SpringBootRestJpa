@@ -1,10 +1,11 @@
-package com.javatpoint.service;
+package com.mmtspl.service;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.javatpoint.model.Books;
-import com.javatpoint.repository.BooksRepository;
+
+import com.mmtspl.model.Books;
+import com.mmtspl.repository.BooksRepository;
 //defining the business logic
 @Service
 public class BooksService 

@@ -1,4 +1,4 @@
-package com.javatpoint.model;
+package com.mmtspl.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;

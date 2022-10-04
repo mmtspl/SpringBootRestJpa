@@ -1,4 +1,4 @@
-package com.javatpoint.controller;
+package com.mmtspl.controller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.javatpoint.model.Books;
-import com.javatpoint.service.BooksService;
+
+import com.mmtspl.model.Books;
+import com.mmtspl.service.BooksService;
 //mark class as Controller
 @RestController
 public class BooksController 
