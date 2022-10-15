@@ -1,25 +1,22 @@
 
 
+SpringBoot
+RestController : CRUD
+JPA : JPQL, Native SQL, @NamedQueries
+H2 DB: DB connection
 
-Database : MySQL
+Database : H2 DB
 
 SQL Queries : 
 
-    create database CustomerData;
-	use CustomerData;
+   
+	Table will be created by JPA properties by running the application.
 	
-	Table will be created by hibernate properties by running the application.
-	
-	###CREATE TABLE CUSTOMER (id int(11) NOT NULL AUTO_INCREMENT,customerName varchar(255) DEFAULT NULL,email varchar(255) DEFAULT NULL,PRIMARY KEY (id));
-	desc customer;
-	desc employee;
-	select * from customer;
-	select * from employee;
-	insert into employee values (1000,"Mithun Majumdar", "150000");
+	data.sql --> DB File
 
 application.properties 
 	
-	make  spring.jpa.hibernate.ddl-auto=create    only for first time for creating User table in CustomerData
+	make  spring.jpa.hibernate.ddl-auto=create    only for first time for creating Books table in books_data datasource
 	
 
 Start up the application :
@@ -36,6 +33,17 @@ Url
 	http://localhost:8080/books/getAllBooks
   	http://localhost:8080/books/getBooksByID/982
   	http://localhost:8080/books/deleteBooksByID/982
+  	
+  	JPQL
+  	http://localhost:8080/books/findBooksByIdJPQL/982
+  	
+  	Native SQL
+  	http://localhost:8080/books/getBooksByIDandAuthorNative/5434/Robert Lafore
+  	
+  	@NamedQuery
+  	http://localhost:8080/books/findBooksByPrice/800
+  	
+  	
   	
   	
   	
